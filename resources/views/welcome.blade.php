@@ -83,7 +83,7 @@
                 },
                 computed: {
                     lastRollHtml: function () {
-                        return !this.lastRoll ? '&nbsp;' : (this.lastRoll !== 11 ? this.lastRoll : 'Jackpot');
+                        return !this.lastRoll ? '...' : (this.lastRoll !== 11 ? this.lastRoll : 'Jackpot');
                     },
                     lastRollClass: function () {
                         return this.lastRoll % 2 === 0 ? 'bg-black' : 'bg-danger';
